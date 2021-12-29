@@ -1,8 +1,0 @@
-.PHONY: build
-build:
-	go build -v ./cmd/apiserver
-
-.PHONY: test
-test:
-	go test -v -race -timeout 30 ./...
-.DEFAULT_GOAL := build
