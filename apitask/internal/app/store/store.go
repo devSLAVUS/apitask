@@ -5,7 +5,7 @@ import(
   _ "github.com/lib/pq"
 )
 type Store struct {
-  config *Config
+  config *Store
   db *sql.DB
 }
 func New(config *Config) *Store {
